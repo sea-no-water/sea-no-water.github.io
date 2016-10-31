@@ -1,6 +1,119 @@
-<main>
-  <script>
-      falfdlasdfl a
-  </script>
 
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>福州市-天气预报</title>
+    <style>
+        body{
+            width:100%;
+            height:100%;
+            margin:0;
+            text-shadow:0 0 1px #333;
+            background-image:linear-gradient(to bottom, rgb(13,104,188),rgb(114,170,225));
+            background-color:rgb(114,170,225);
+            background-repeat:no-repeat;
+            text-align:center;
+            color:white;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        }
+        header{
+            font-size:30px;
+            line-height:60px;
+        }
+        main.icon{
+            margin:30px;
+            background-image:url(days/qing.png);
+            height:130px;
+            width:130px;
+            background-position:center center;
+            background-repeat:no-repeat;
+             
+        }
+        main.tempers{
+            font-size:30px;
+
+        }
+        main sup{
+            font-size:20px;
+
+        }
+        main.weather{
+            font-size:17px;
+
+        }
+        main.wind{
+            font-size:14px;
+
+        }
+        main.current{
+            font-size:14px;
+        }
+        footer{
+            margin:0 auto;
+            padding:40px 0;
+            width:90%;
+            font-size:14px;
+
+        }
+        section{
+            width:33.33%;
+            float:left;
+            border-right:solid 1px #aaf;
+            box-sizing:border-box;
+
+        }
+        section-nth-child(3){
+            border:none;
+
+        }
+        section.icon{
+            height:65px;
+            margin:15px auto;
+            background-image:url(days/qing.png);
+            background-repeat:no-repeat;
+            background-position:center center;
+            opacity:0.7;
+            background-size:60px;
+        }
+    </style>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <header>福州市</header>
+    <main>
+        <div class="icon"></div>
+        <div class="tempers">&nbsp; <span>22~28</span><sup>℃</sup></div>
+        <div class="weather">小雨</div>
+        <div class="wind">威风</div>
+        <div class="current">实时温度：13℃，空气指数 45 优</div>
+    </main>
+    <footer>
+        <section>
+            <div class="week">星期三</div>
+            <div class="icon"></div>
+            <div class="temper">10~8℃</div>
+            <div class="weather">晴</div>
+            <div class="wind">大风</div>
+        </section>
+        <section>
+            <div class="week">星期三</div>
+            <div class="icon"></div>
+            <div class="temper">10~8℃</div>
+            <div class="weather">晴</div>
+            <div class="wind">大风</div>
+        </section>
+        <section>
+            <div class="week">星期三</div>
+            <div class="icon"></div>
+            <div class="temper">10~8℃</div>
+            <div class="weather">晴</div>
+            <div class="wind">大风</div>
+        </section>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
